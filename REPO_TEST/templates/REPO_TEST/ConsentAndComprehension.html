@@ -1,0 +1,47 @@
+{% extends "global/Page.html" %}
+{% block title %}Consent and Comprehension{% endblock %}
+
+{% block content %}
+
+<h3>Participant Information and Consent</h3>
+
+<p>Dear participant,</p>
+<p>Thank you for your interest in our study. This page provides detailed guidance for participation in the study. Please read it carefully before you begin.</p>
+
+<h4>Content of the Experiment</h4>
+<p>In this study, you will complete two short tasks involving decision-making with and without AI support.</p>
+
+<ul>
+    <li><strong>Task 1: Income Category Estimation</strong><br>
+        You will receive information about a real person (e.g., work classification, education, marital status) and estimate whether they belong to a Low, Middle, or High income group. You will complete 3 rounds. After each initial estimate, you will see the AI's prediction and eXplanation. You may then choose to adjust your estimate based on the model’s suggestion or keep your estimate.<br>
+        <em><strong>Note:</strong> The model is not perfect and has an accuracy of 72%.</em>
+
+    </li>
+    <li><strong>Task 2: Music Score Prediction</strong><br>
+        You will receive information about a song (e.g., Streaming statistics, presence on platforms like YouTube and TikTok, release date) and estimate its average score (1–100) on Spotify. You will also complete 3 rounds. After each initial estimate, you will see the AI's prediction and eXplanation. You may then adjust your estimate based on the model’s suggestion or keep your estimate.<br>
+        <em><strong>Note:</strong> The model is not perfect and has an accuracy of 86%.</em>
+    </li>
+</ul>
+
+<h4>Procedure</h4>
+<p>The study takes approximately 20 minutes. Participation is voluntary. You may withdraw at any time by returning your submission on Prolific (click “Stop Without Completing”).</p>
+<p><strong>Note:</strong> You must complete the study to receive payment. You will be compensated with £2.00 plus potential bonus payments.</p>
+
+<h4>Anonymity</h4>
+<p>The study is anonymous. We do not collect personal data, and oTree does not store identifying information such as IP addresses. The data is linked only to your Prolific ID. Results will be reported in aggregates and cannot be linked to individual participants.</p>
+
+<p><strong>By selecting “I consent”, I confirm that I understand the above information and agree to participate in the study.</strong></p>
+
+{{ formfield player.consent }}
+
+<hr>
+<h4>Comprehension Check</h4>
+<p>Please answer the following questions to show you understand the study:</p>
+
+{{ formfield player.comp_task_understanding }}
+{{ formfield player.comp_model_accuracy }}
+{{ formfield player.comp_payment }}
+
+{% next_button %}
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "global/Page.html" %}
+{% block title %}Consent Form{% endblock %}
+
+{% block content %}
+
+<h3>Participant Information and Consent</h3>
+
+<p>Dear participant,</p>
+
+<p>Thank you for your interest in our study. This page provides detailed guidance for participation in the study. Please read it carefully before you begin.</p>
+
+<h4>Content of the Experiment</h4>
+<p>In this study, you will complete two short tasks involving decision-making with and without AI support.</p>
+
+<ul>
+    <li><strong>Task 1: Income Category Estimation</strong><br>
+        You will receive information about a real person (e.g., job type, education level, marital status) and estimate whether they belong to a Low, Middle, or High income bracket. This task also includes 3 rounds. As with Task 1, you will see an AI recommendation after your initial estimate and can revise your response.<br>
+        <em>Note: The model’s accuracy in this task is 72%.</em>
+    </li>
+    <li><strong>Task 2: Music Chart Prediction</strong><br>
+        You will receive information about a song (e.g., genre, artist, release date) and estimate its position on the music charts (1–100). You will complete 3 rounds. After each initial estimate, you will see a recommendation from a trained AI model. You may adjust your estimate based on the model’s suggestion.<br>
+        <em>Note: The model is not perfect and has an accuracy of 86%.</em>
+    </li>
+</ul>
+
+<h4>Procedure</h4>
+<p>The study takes approximately 20 minutes. Participation is voluntary. You may withdraw at any time by returning your submission on Prolific (click “Stop Without Completing”).</p>
+<p><strong>Note:</strong> You must complete the study to receive payment. You will be compensated with £3.00 plus potential bonus payments.</p>
+
+<h4>Anonymity</h4>
+<p>The study is anonymous. We do not collect personal data, and oTree does not store identifying information such as IP addresses. The data is linked only to your Prolific ID. Results will be reported in aggregate and cannot be linked to individual participants.</p>
+
+<p><strong>By clicking “I consent”, I confirm that I understand the above information and agree to participate in the study.</strong></p>
+
+<form method="post">
+    {{ formfields }}
+    <button class="btn btn-primary" name="consent" value="True">Continue to Study</button>
+    <button class="btn btn-secondary" name="consent" value="False">Go back to Prolific</button>
+</form>
+
+{% extends "global/Page.html" %}
+
+{% block title %}Comprehension Check{% endblock %}
+
+{% block content %}
+
+<p>Please answer the following questions to show you understand the study:</p>
+
+{{ formfield player.comp_task_understanding }}
+{{ formfield player.comp_model_accuracy }}
+{{ formfield player.comp_payment }}
+
+{% next_button %}
+
+{% endblock %}
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "global/Page.html" %}
+
+{% block content %}
+<h2>Participation Information</h2>
+
+<h3>Task 1: Income Group Estimation</h3>
+
+<p>
+You are a policy advisor for a non-profit research institute focused on social inequality and economic mobility in Germany. Your team is exploring the use of AI-based decision-support tools to improve early identification of individuals at risk of economic hardship for better targeted public resources and outreach programs.
+</p>
+
+<p>
+You find a start-up specializing in applied machine learning has developed an AI tool trained on real German data that predicts whether a person belongs to a low-, middle-, or high-income group based on non-sensitive personal characteristics such as marital status, duration of education, and lifestyle indicators (e.g., smoking or drinking habits).
+</p>
+
+<p>
+The CEO, confident in your expertise, tasks you with evaluating the model’s usefulness before your organization decides whether to adopt it. To do this, you will be given data on a real person, and you should estimate their income group. Afterwards, you will be shown the model’s prediction, and you must assess whether you would maintain your estimate or revise it.
+</p>
+
+<p>
+Be critical — whether your organization adopts this model could have meaningful consequences. If adopted, the model may help allocate resources more efficiently, reducing inequality. If rejected, it may delay technological improvements in social program design. The model is not perfect; it has an accuracy of 72%.
+</p>
+
+<p>
+Ultimately, you are responsible for evaluating its usefulness and making a well-justified decision. Furthermore, your assessment may also influence how much confidence leadership places in your judgment in the future.
+</p>
+
+<p>
+Since the CEO depends on your expertise to either adopt the model or not, you should explain why you accepted or rejected the model’s advice and show that you take responsibility and accountability for the final decision. Your justification will therefore be reviewed and assigned a responsibility score; this score determines the percentage of the bonus payment of £2.00 you receive.
+</p>
+
+<hr>
+
+<h4>Task Flow</h4>
+<ul>
+    <li>You will receive basic information about a real German person (e.g., marital status, years of education, drinking habits)</li>
+    <li>You should estimate whether they belong to a Low-, Middle-, or High-income group</li>
+    <li>Then you'll see the model’s prediction and explanation</li>
+    <li>You may revise your estimate based on the recommendation</li>
+    <li>Finally, you must write a brief justification of your decision. Please explain why you accepted or rejected the model’s advice and show that you understand the stakes and take responsibility for your final choice.</li>
+</ul>
+
+<hr>
+
+<h4>Compensation</h4>
+<p>
+Your base reward is <strong>£2.00</strong> + <strong>£0.50</strong> for each accurate answer + <strong>justification score × £3.00</strong><br>
+<em>Note: You need to complete the study to be eligible for payment.</em>
+</p>
+
+<br>
+{% next_button %}
+{% endblock %}

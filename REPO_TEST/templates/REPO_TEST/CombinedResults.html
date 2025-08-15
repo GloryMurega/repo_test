@@ -1,0 +1,12 @@
+{% extends "global/Page.html" %}
+{% block content %}
+  <h2>Payment Summary</h2>
+  <ul>
+    <li><strong>Total Accuracy Bonus:</strong> {{ combined_accuracy_bonus }}</li>
+    <li><strong>Total Responsibility Bonus:</strong> {{ combined_responsibility_bonus}}</li>
+    <li><strong>Total Bonus Payment:</strong> {{ combined_total_bonus }}</li>
+    <li><strong>Participation Fee:</strong> {{ participation_fee}}</li>
+    <li><strong>Final Payment (Bonuses + Fee):</strong> {{ final_payment }}</li>
+  </ul>
+  {% next_button %}
+{% endblock %}

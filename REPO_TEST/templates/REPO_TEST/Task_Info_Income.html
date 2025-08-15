@@ -1,0 +1,12 @@
+{% extends "global/Page.html" %}
+{% block content %}
+<h2>Income Prediction Task</h2>
+<p>
+Below is information about a <strong>real German person</strong>. Please select which income group you believe they belong to.
+</p>
+<p>{{ person_desc }}</p>
+
+{{ formfields }}
+{% next_button %}
+{% endblock %}
+

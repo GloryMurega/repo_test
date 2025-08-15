@@ -1,0 +1,26 @@
+{% extends "global/Page.html" %}
+
+{% block content %}
+  <h2> AI's Prediction & eXplanation </h2>
+  {% if income_description %}
+    <p><b>Person Info:</b> {{ income_description }}</p>
+  {% endif %}
+  <p>The AI model predicts: <b>{{ AI_Prediction }}</b></p>
+
+  <img
+    src="{% static eXplanation %}"
+    alt="AI explanation"
+    style="max-width: 65%; height: auto;"
+  />
+  <br><br>
+
+  <p> You may keep your original answer by selecting the same or choose to revise it. </p>
+  {% for field in form %}
+    {{ formfield field }}
+  {% endfor %}
+
+  <!-- ONLY high_responsibility sees justification -->
+
+  {% next_button %}
+{% endblock %}
+

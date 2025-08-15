@@ -1,0 +1,11 @@
+{% extends "global/Page.html" %}
+{% block content %}
+<h2>Music Score Prediction Task</h2>
+<p>
+  Below you are given information about a song. Please estimate the <strong>Spotify score (between 1–100)</strong> you would assign to song based on the given factors.
+    Remember the score is a <strong>weighted song performace</strong>, thus it is <strong>rounded to one decimal place</strong>, e.g. <strong>99.1</strong> or <strong>99.0</strong> — not just <strong>99</strong>
+</p>
+    <p>{{ song_desc }}</p>
+{{ formfields }}
+{% next_button %}
+{% endblock %}

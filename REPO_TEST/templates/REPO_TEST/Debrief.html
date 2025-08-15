@@ -1,0 +1,26 @@
+{% extends "global/Page.html" %}
+
+{% block content %}
+<h2>Thank You for Participating in this Study!</h2>
+
+<p>You will receive your participation fee of <strong> £2 immediately</strong>. The bonus payment <strong> will be paid after review.</strong></p>
+
+<hr>
+
+<h3>Your Bonus Payment</h3>
+<ul>
+  <li><strong>Accuracy Bonus:</strong> {{ bonus_accuracy }}</li>
+  {% if high_responsibility %}
+     <li><strong>Responsibility Bonus:</strong> {{ bonus_responsibility }}</li>
+  {% endif %}
+  <li><strong>Total Bonus:</strong> <b>{{ bonus_payment }}</b></li>
+</ul>
+
+<hr>
+<p>To complete your participation, please click the link below:</p>
+<p>
+  <a href="https://app.prolific.com/submissions/complete?cc=XXXXXXX" target="_blank">
+    <strong>Submit on Prolific</strong>
+  </a>
+</p>
+{% endblock %}

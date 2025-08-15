@@ -1,0 +1,15 @@
+{% extends "global/Page.html" %}
+
+{% block title %}Comprehension Check{% endblock %}
+
+{% block content %}
+
+<p>Please answer the following questions to show you understand the study:</p>
+
+{{ formfield player.comp_task_understanding }}
+{{ formfield player.comp_model_accuracy }}
+{{ formfield player.comp_payment }}
+
+{% next_button %}
+{% endblock %}
+

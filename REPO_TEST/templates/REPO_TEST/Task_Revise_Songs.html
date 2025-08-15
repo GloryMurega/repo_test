@@ -1,0 +1,28 @@
+{% extends "global/Page.html" %}
+
+{% block content %}
+  <h2> AI's Prediction & eXplanation</h2>
+  {% if song_description %}
+    <p><b>Song Info:</b> {{ song_description }}</p>
+  {% endif %}
+
+  <!-- ALWAYS visible -->
+  <p>The AI model predicts: <b>{{ AI_Prediction }}</b></p>
+
+  <img
+    src="{% static eXplanation %}"
+    alt="AI explanation"
+    style="max-width: 65%; height: auto;"
+  />
+  <br><br>
+
+  <p>You may keep your original answer by entering the same value or choose to revise it.</p>
+  {% for field in form %}
+    {{ formfield field }}
+  {% endfor %}
+
+  <!-- ONLY high_responsibility sees justification -->
+
+  {% next_button %}
+{% endblock %}
+

@@ -1,0 +1,12 @@
+{% extends "global/Page.html" %}
+
+{% block title %}Mini-Task{% endblock %}
+
+{% block content %}
+<p>Imagine you are buying snacks for an astronaunt,what would you buy?
+    To make sure you are paying attention, please ignore the question and
+    simply type the word sunshine in the box below.</p>
+{{ formfield player.response }}
+
+{% next_button %}
+{% endblock %}

@@ -1,0 +1,108 @@
+{% extends "global/Page.html" %}
+{% block content %}
+<div class="container" style="max-width:900px;background:#fff;margin:30px auto 50px;padding:30px 24px;box-shadow:0 2px 12px rgba(30,40,80,0.08);">
+  <h1>
+    Information on the processing of personal data within the study “AI at the Workplace” in accordance with Art. 13 of the General Data Protection Regulation (GDPR) <br>
+  </h1>
+  <div style="font-size:0.97em; color:#444; margin-bottom:1em;">
+    Version 1.0 from 08.08.2025
+  </div>
+  <section class="consent-box">
+    <strong>Declaration of Consent</strong>
+    <div style="margin: 17px 0 10px; color:#222;">
+      The following declaration of consent is obtained in the event that you are identifiable on the basis of the entry of personal data.
+    </div>
+    <div>
+      {{ formfield player.data_privacy_consent }}
+    </div>
+  </section>
+  {% next_button %}
+  <hr style="margin:36px 0;">
+  <section class="consent-box">
+  <section>
+    This data protection information describes the processing of your personal data within the study “AI at the Workplace”. In doing so, the University of Paderborn fulfils its information obligations under Article 13 of the EU General Data Protection Regulation (GDPR). With regard to the terms used in the following, e.g. "personal data", "processing", "controller", reference is made to the definitions in Art. 4 of the GDPR.
+  </section>
+  <section>
+    <div class="section-title"><strong>1. Names and contact details</strong></div>
+      <section> The University of Paderborn, a corporation with legal capacity under public law supported by the state of North Rhine-Westphalia, is responsible for the processing of your personal data in the context of the implementation of the above-mentioned processing activity. It is represented by the president.
+          <section>
+    <div>
+      <strong>1.1 Name and contact details of the controller</strong><br>
+      Universität Paderborn, Warburger Str. 100, 33098 Paderborn, Germany.<br>
+      Phone: 05251 / 60 – 0,<br> Web: <a href="https://www.uni-paderborn.de" target="_blank" rel="noopener">https://www.uni-paderborn.de</a><br>
+      <strong>1.2 Contact persons for this study</strong><br>
+          Prof. Dr. Kirsten Thommes: Phone: 05251 / 60 2090 , Email: <a href="kirsten.thommes@uni-paderborn(dot)de ">kirsten.thommes@uni-paderborn(dot)de   </a><br>
+      Web: <a href="https://www.uni-paderborn.de/person/72497/" target="_blank">https://www.uni-paderborn.de/person/72497</a>
+      <br>
+        Glory Murega: Phone: 05251 / 60 2386, Email: <a href="glory.murega@uni-paderborn(dot)de">glory.murega@uni-paderborn(dot)de  </a><br>
+      Web: <a href="https://www.uni-paderborn.de/person/84263/" target="_blank">https://www.uni-paderborn.de/person/84263</a>
+        <br>
+      <strong>1.3 Contact Details of the Data Protection Officer</strong><br>
+      You can contact Paderborn University's data protection officer via post at the address of the controller given above (see point 1.1), or as follows:<br>
+      Phone: 05251 / 60 – 4444,
+      Email: <a href="datenschutz@uni-paderborn.de ">datenschutz@uni-paderborn.de </a><br> Web: <a href="https://www.uni-paderborn.de/datenschutz/" target="_blank">https://www.uni-paderborn.de/datenschutz/</a>
+    </div>
+  </section>
+  <section>
+  <div class="section-title"><strong>2. Data category(ies), purpose(s) and legal basis for processing your personal data</strong></div>
+  <div>
+    <p>
+      In the context of this study “AI at the Workplace” conducted online on oTree via Prolific, only anonymous survey data will be processed. In individual cases, it cannot be ruled out that natural persons can be identified by their own information or by a combination thereof. In these cases, this data protection information applies.
+    </p>
+    <p>
+      Processed data categories are personal data entered by you yourself as part of the study questionnaire. These are anonymized (blackened/deleted) before the evaluation begins.
+    </p>
+    <p>
+      Steps of data processing are: 1)Provision of invitation link via Prolific, 2)temporary online survey in oTree, 3)anonymization of any personal data available, and 4)evaluation.
+    </p>
+    <p>
+      <b>Notes:</b> The online survey is conducted on Prolific and oTree. Technical participation data (e.g., IP address etc.) is not collected. Any presentations of the evaluation results are made exclusively with anonymized data.
+    </p>
+    <p>
+      The purpose of the processing is research insights on AI-Human collaboration implemented as part of doctoral research at the University of Paderborn 2025 (via online survey with Prolific).
+    </p>
+    <p>
+      If you are identifiable, the legal basis for the processing of your personal data in the context of carrying out the above-mentioned processing activity is your consent in accordance with Art. 6 para. 1 subpara. 1 lit. a) GDPR.
+    </p>
+  </div>
+</section>
+  <section>
+    <div class="section-title"><strong>4. Duration of storage of your personal data</strong></div>
+    <div>
+        If and to the extent that the processing of your personal data is based on your consent, your personal data will only be stored until you revoke your declaration of consent, unless there is also another legal basis for the processing (Art. 17 para. 1 lit. b) GDPR).
+        If individuals are identifiable, personal data will be deleted / anonymized within six months   after the end of the survey, no later than 12 months (December 2026). And if the data is available in the form of paper documents – destroyed.
+     </div>
+  </section>
+  <section>
+    <div class="section-title"><strong>5. Rights of data subjects</strong></div>
+    <div>
+      As a data subject, you may at any time exercise the rights granted to you by the GDPR; These are:
+      <ul>
+        <li>the right to information as to whether and which of your data is being processed in accordance with Art. 15 GDPR, § 12 DSG NRW;</li>
+        <li>the right to request the correction or completion of data concerning you in accordance with Art. 16 GDPR;</li>
+        <li>the right to erasure of data concerning you in accordance with Art. 17 GDPR, § 10 DSG NRW;</li>
+        <li>the right to restrict the processing of data in accordance with Art. 18 GDPR;</li>
+        <li>the right to data transfer of data concerning you in accordance with Art. 20 GDPR. </li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <div class="section-title"><strong>6. Revocability of your declaration of consent</strong></div>
+    <div>
+      Any consent given can be revoked in whole or in part at any time without giving reasons. The revocation does not affect the lawfulness of the processing carried out on the basis of the consent before the revocation (Art. 7 para. 3 GDPR). As a result, we may no longer continue the data processing based on this consent for the future and must delete your data, unless there is also another legal basis for the processing (Art. 17 para. 1 lit. b) GDPR). If you would like to revoke your declaration of consent in whole or in part, please contact the contact person mentioned above or send an email to: <a href="datenschutz@uni-paderborn.de ">datenschutz@uni-paderborn.de </a><br> Please note that it is no longer possible to delete your data and, if necessary, to change and view your personal data after six month after the end of the survey (by december 2026 at the latest) due to the anonymisation of your data.
+    </div>
+  </section>
+  <section>
+    <div class="section-title"><strong>7. Right to lodge a complaint</strong></div>
+    <div>
+      In addition to the above-mentioned rights, you have the right to lodge a complaint with the supervisory authority under data protection law (Art. 77 GDPR) if you believe that the processing of personal data concerning you violates these data protection requirements; e.g. at the University of Paderborn responsible State Commissioner for Data Protection and Freedom of Information North Rhine-Westphalia, Kavalleriestr. 2-4, 40213 Düsseldorf, Phone: 0211/38424-0, E-Mail: <a href="poststelle@ldi.nrw.de ">poststelle@ldi.nrw.de </a><br>
+    </div>
+  </section>
+  <section>
+    <div class="section-title"><strong>8. Validity of this information</strong></div>
+    <div>
+      The University of Paderborn reserves the right to change this data protection information in order to adapt it to changes in relevant laws or regulations or to better meet your needs. This data protection information applies in the version most recently published by the University of Paderborn. Therefore, please note the current version number of the data protection information.
+    </div>
+  </section>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "global/Page.html" %}
+{% block content %}
+    <h3>Round {{ round_num }} Results</h3>
+
+    <p>Original score: {{ original_choice }}</p>
+    <p>Revised score: {{ revised_choice }}</p>
+    <p>Accuracy bonus: {{ accuracy_bonus }}</p>
+
+    {% if responsibility_bonus %}
+        <p>Responsibility bonus: {{ responsibility_bonus }}</p>
+    {% endif %}
+
+    <p>Total bonus this round: {{ total_bonus }}</p>
+    <p>You may proceed to the next round.</p>
+
+    {% next_button %}
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "global/Page.html" %}
+{% block content %}
+    <h3>Review AI Prediction and Revise Your Decision</h3>
+    <p><b>AI Prediction:</b> {{ AI_Prediction }}</p>
+    <p><b>Description:</b> {{ description }}</p>
+    <p><b>Explanation:</b>
+      {% if eXplanation %}
+        <img
+          src="{% static eXplanation %}"
+          alt="AI explanation"
+          style="max-width: 65%; height: auto;"
+        />
+      {% endif %}
+    </p>
+    {{ formfields }}
+    {% next_button %}
+{% endblock %}

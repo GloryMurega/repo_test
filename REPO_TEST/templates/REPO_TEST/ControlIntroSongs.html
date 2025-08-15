@@ -1,0 +1,45 @@
+{% extends "global/Page.html" %}
+
+{% block content %}
+<h2>Participation Information</h2>
+
+<h3>Task 2: Song Score Prediction</h3>
+
+<p>
+Dear participant,<br><br>
+You are a senior data and content strategy manager at Spotify. It is early 2014, and the firm is considering acquiring a music intelligence AI tool. Echo Nest claims to offer a perfect solution: a model that predicts the future chart performance of songs based on playlist inclusion data, external signals like Shazam counts, and social media performance.
+</p>
+
+<p>
+The CEO tasks you with evaluating this technology for potential adoption. To do this, you will be given data on a song, and you should predict the average weighted chart performance score (from 1.0 to 100.0). Afterwards, you will see the model’s prediction and must decide whether to maintain or revise your estimate.
+</p>
+
+<p>
+Be critical — adopting this model could influence playlist curation, promotional strategy, and the visibility of thousands of artists. Rejecting it could mean missing opportunities to enhance forecasting capabilities. The model is not perfect; it has an accuracy of 86%.
+</p>
+
+<p>
+Your task is to carefully evaluate the model’s usefulness and decide whether or not to follow its recommendation. Your assessment may influence how much confidence leadership places in your judgment in the future.
+</p>
+
+<hr>
+
+<h4>Task Flow</h4>
+<ul>
+    <li>You will receive information about a song (e.g., presence in playlists, Shazam counts, explicit content, release year)</li>
+    <li>You’ll estimate its expected chart score</li>
+    <li>You’ll then see The Echo Nest model’s prediction</li>
+    <li>You may revise your estimate based on the model’s recommendation</li>
+</ul>
+
+<hr>
+
+<h4>Compensation</h4>
+<p>
+Your base reward is <strong>£2.00</strong> + <strong>£0.50</strong> for each accurate answer<br>
+<em>Note: You need to complete the study to be eligible for payment.</em>
+</p>
+
+<br>
+{% next_button %}
+{% endblock %}
