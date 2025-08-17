@@ -1,2 +1,3 @@
-web: gunicorn REPO_TEST.wsgi --log-file -
+web: otree prodserver1of2
 worker: otree prodserver2of2
+
