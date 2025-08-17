@@ -1,4 +1,4 @@
-from idlelib.colorizer import DEBUG
+#from idlelib.colorizer import DEBUG
 from os import environ
 
 SESSION_CONFIGS = [
