@@ -5,12 +5,7 @@ import json
 from otree.api import Currency as c
 
 import sys
-#sys.setrecursionlimit(new_limit)
-
-try:
-    from responsibility_ai.scorer import responsibility_score
-except ImportError:
-    from .scorer import responsibility_score
+from .scorer import responsibility_score, is_coherent
 
 class C(BaseConstants):
     NAME_IN_URL = 'REPO_TEST'

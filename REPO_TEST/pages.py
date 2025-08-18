@@ -6,12 +6,6 @@ from otree.api import Currency as c
 
 import json
 
-#try:
- #   from responsibility_ai.scorer import responsibility_score
-#except ImportError:
- #   from .scorer import responsibility_score
-
-#from .scorer import is_coherent
 from .scorer import responsibility_score, is_coherent
 class ProlificID(Page):
     form_model = 'player'
