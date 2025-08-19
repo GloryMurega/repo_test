@@ -8,9 +8,10 @@ urllib3==2.5.0
 idna==3.10
 certifi==2025.7.14
 charset-normalizer==3.4.2
-torch==2.1.0
+torch==2.5.0
 transformers==4.55.2
 typing_extensions==4.14.1
 nltk==3.8.1
 numpy==2.3.2
+
 
