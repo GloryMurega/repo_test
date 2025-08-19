@@ -274,7 +274,7 @@ class Task_Revise_Songs(RequiresComprehensionPass):
         idx = self.round_number - C.SONGS_ROUNDS[0]
         return {
             "AI_Prediction": C.SONGS_PREDICTIONS[idx],
-            "eXplanation": f"REPO_TEST/{C.SONGS_EXPLANATIONS[idx]}",
+            "eXplanation": f"REPO_TEST/{C.SONGS_EXPLANATIONS[idx].lower()}",
             "song_description": self.player.song_desc(),
             "high_responsibility": self.player.high_responsibility,
             "music_choice_rev_field": f"music_choice_rev_{self.round_number}",
